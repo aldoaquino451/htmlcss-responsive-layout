@@ -64,6 +64,7 @@ header .topbar {
 .testimonials .card .profile-pic {
   height: 100px;  /**/
   width: 100px;   /**/
+  margin: 25px auto;
   border-radius: 100%;
   background-color: white;
 }

@@ -2,8 +2,50 @@
 
 
 /* tablet  */
-@media screen and (min-width:700px) {
+@media screen and (min-width:576px) {
+
+  .demo .cards {
+    flex-flow: row wrap;
+  }
+
+  .demo .card:first-child {
+    width: calc((100% - 20px) * 2/3);
+    height: 500px;
+  }
+
+  .demo .card {
+    width: calc((100% - 20px) * 1/3);
+    height: 500px;
+  }
   
+  .testimonials .card {
+    flex-direction: row;
+    height: 200px;
+  }
+
+  .testimonials .card .profile-pic {
+    margin: 25px;
+  }
+
+  .benefits .cards {
+    flex-flow: row wrap;
+  }
+
+  .benefits .card {
+    background-color: white;
+    height: 300px;  /**/
+    width: calc(50% - 25px);
+  }
+  
+  .about-us .col {
+    flex-direction: row;
+  }
+
+  .about-us .text {
+    width: 60%;
+  }
+
+
 }
 
 
@@ -20,8 +62,10 @@
 
 
 /* desktop */
-/* 
-@media screen and (min-width:1000px) {
-  
+
+@media screen and (min-width:992px) {
+  .container {
+    max-width: 910px;
+  }
+
 }
- */
