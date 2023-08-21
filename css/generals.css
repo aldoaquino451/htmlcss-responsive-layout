@@ -1,0 +1,85 @@
+/* ---------------
+    VARIABILI
+----------------*/
+
+:root {
+  --color-box: #e0ffff; /**/
+  --color-element: #f08080; /**/
+  --color-darkblue: #0084fd;
+  --color-lightblue: #b5ddff;
+  --color-violet: #9792e4;
+  --color-black: #333333;
+  --color-yellow: #fdc15f;
+}
+
+/* ---------------
+    GENERAL
+----------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+main section {
+  padding: 50px 0;
+}
+
+section.even {
+  background-color: var(--color-violet);
+}
+
+.card {
+  border-radius: 20px;
+  padding: 30px 15px;
+}
+
+/* Utilities */
+
+.container {
+  width: calc(100vw - 50px);
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.s-between {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+} 
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+/**/
+.debug {
+  min-height: 100px;
+  background-color: var(--color-element);
+}
