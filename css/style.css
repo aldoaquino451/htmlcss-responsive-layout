@@ -10,6 +10,11 @@ info utili tipo colore, ecc.
 :root {
   --color-box: #e0ffff; /**/
   --color-element: #f08080; /**/
+  --color-darkblue: #0084fd;
+  --color-lightblue: #b5ddff;
+  --color-violet: #9792e4;
+  --color-black: #333333;
+  --color-yellow: #fdc15f;
 }
 
 /* ---------------
@@ -40,15 +45,21 @@ body {
 }
 
 .row {
+  display: flex;
   flex-direction: row;
 }
 
 .col {
+  display: flex;
   flex-direction: column;
 }
 
 .s-between {
   justify-content: space-between;
+}
+
+.cross-centered {
+  align-items: center;
 }
 
 .centered {
@@ -67,9 +78,19 @@ body {
     HEADER
 ----------------*/
 
+header {
+  background-color: var(--color-darkblue);
+  color: white;
+}
 
+.topbar {
+  height: 100px;
+  justify-content: center;
+}
 
-
+.topbar-content {
+  justify-content: space-between;
+}
 
 
 /* ---------------
@@ -87,7 +108,15 @@ body {
     FOOTER
 ----------------*/
 
+footer {
+  background-color: var(--color-black);
+  color: white;
+  padding: 50px 0;
+}
 
+footer .bottombar {
+  gap: 50px;
+}
 
 
 
