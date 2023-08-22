@@ -10,6 +10,7 @@
 
 html {
   font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
 }
 
 main section {
@@ -35,7 +36,7 @@ a.btn {
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 36px;
 }
 
 p {
@@ -86,7 +87,7 @@ header .hamburger .btn {
 /* section demo  */
 
 .demo .cards {
-  gap: var(--test-gap);
+  gap: var(--demo-gap);
 }
 
 .demo .card {
@@ -197,25 +198,25 @@ header .hamburger .btn {
   padding: 0 20px;
 }
 
-.testimonials .card .pic {
+.testimonials .card .profile-pic {
+  padding: 30px 0;
+}
+.testimonials .card .profile-pic .image {
   width: 200px;
   height: 200px;
-  margin: 30px auto;
   border-radius: 100%;
-  background-color: black;
   overflow: hidden;
   object-fit: contain;
 }
 
-.testimonials .card .pic img {
+.testimonials .card .profile-pic img {
   object-fit: cover;
   height: 100%;
 }
 
 .testimonials .card span {
-  padding: 20px 0;
+  padding: 30px 0;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .testimonials .card p::before {
@@ -232,24 +233,88 @@ header .hamburger .btn {
 
 /* benefits section  */
 
-.benefits .text {
+.benefits h1 {
   color: white;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.benefits h2,
+.benefits span {
+  color: var(--color-violet);
+}
+
+.benefits span {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.benefits h2 {
+  padding: 35px 0 30px;
 }
 
 .benefits .cards {
-  gap: 50px;
+  gap: var(--benefits-gap);
 }
 
 .benefits .card {
+  padding: 40px 30px 30px;
   background-color: white;
-  height: 400px;  /**/
+  color: var(--color-lightgrey);
+}
+
+.benefits .card a.btn {
+  margin-top: 30px;
+  padding: 15px 45px;
+  border-radius: 100px;
+  color: white;
+  background-color: var(--color-violet);
 }
 
 /* about-us section  */
 
-.about-us .text,
-.about-us .linkedin {
-  height: 400px;
+.about-us {
+  color: var(--color-violet);
+}
+
+.about-us .content h1 {
+  font-size: 50px;
+}
+
+.about-us .content p {
+  color: black;
+  margin: 40px 0;
+}
+
+.about-us .linkedin .profile-pic {
+  display: inline-block;
+  position: relative;
+}
+
+.about-us .linkedin .profile-pic .image {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  border-radius: 100%;
+  overflow: auto;
+}
+
+.about-us .linkedin .profile-pic i {
+  font-size: 70px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+
+.about-us .linkedin h2 {
+  padding: 30px 0;
+}
+
+.about-us .linkedin a.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--color-violet);
 }
 
 

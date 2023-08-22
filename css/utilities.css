@@ -9,7 +9,9 @@
   --color-black: #333333;
   --color-yellow: #fdc15f;
   --color-grey: #5a6e7f;
-  --test-gap: 25px;
+  --color-lightgrey: #737373;
+  --demo-gap: 25px;
+  --benefits-gap: 30px;
 }
 
 /* Utilities */
