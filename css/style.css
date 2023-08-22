@@ -12,6 +12,10 @@ header .topbar {
   height: 60px;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* ---------------
     MAIN
 ----------------*/
@@ -19,7 +23,7 @@ header .topbar {
 /* section demo  */
 
 .demo .cards {
-  gap: 20px;
+  gap: var(--test-gap);
   align-items: center;
 }
 

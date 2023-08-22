@@ -10,6 +10,7 @@
   --color-violet: #9792e4;
   --color-black: #333333;
   --color-yellow: #fdc15f;
+  --test-gap: 40px;
 }
 
 /* ---------------
@@ -29,6 +30,7 @@ body {
 
 main section {
   padding: 50px 0;
+  /* padding: 50px; */
 }
 
 section.even {
@@ -44,6 +46,7 @@ section.even {
 
 .container {
   width: calc(100vw - 50px);
+  /* max-width: 1140px; */
   margin: 0 auto;
 }
 
