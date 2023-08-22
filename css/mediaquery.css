@@ -97,27 +97,39 @@
   }
 
   .demo .card:first-child .image {
-    height: auto;
+    justify-content: flex-end;
+    align-items: center;
   }
-
-  .demo .card:first-child .image img {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
-
-
 
   /* app  */
-  /* .app .container {
-    display: flex;
-    flex-direction: row;
+
+  .app {
+    padding-top: 150px;
   }
 
-  .app .container > * {
-    width: 50%;
+  .app > .container > .col {
+    width: 880px;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-end;
+  }
+
+  .app > .container > .col > * {
+    width: 100%;
+  }
+
+  .app .card {
+    margin: 0;
+    padding: 30px;
+  }
+
+  .app .card .image img {
+    width: 250px;
+  }
+
+  /* .app .container .col > * {
+    width: 100%;
   } */
 
   /* benefits */

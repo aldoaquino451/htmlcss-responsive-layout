@@ -44,6 +44,7 @@ p {
 
 img {
   width: 100%;
+  display: block;
 }
 
 span {
@@ -130,16 +131,8 @@ header .hamburger .btn {
   font-size: 16px;
 }
 
-.demo .card:first-child .image {
-  height: 280px;
-  position: relative;
-}
-
 .demo .card:first-child .image img {
-  width: 100%;
   max-width: 250px;
-  position: absolute;
-  bottom: 0;
 }
 
 /* section app  */
@@ -170,6 +163,16 @@ header .hamburger .btn {
 
 .app .card p {
   font-style: italic;
+}
+
+.app .card a {
+  width: 50px;
+  height: 50px;
+  margin: 30px auto 0;
+  border-radius: 100%;
+  color: black;
+  font-size: 20px;
+  background-color: var(--color-violet);
 }
 
 /* testimonials section  */
