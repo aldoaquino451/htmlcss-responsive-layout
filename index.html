@@ -17,7 +17,7 @@
   <!-- css files  -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mediaquery.css">
-  <link rel="stylesheet" href="./css/generals.css">
+  <link rel="stylesheet" href="./css/utilities.css">
 
   <!-- titolo  -->
   <title>Responsive Layout</title>
@@ -32,9 +32,22 @@
     <div class="container">
 
       <div class="topbar row s-between ai-center">
-        <div class="logo">logo</div>
-        <nav class="menu-icon">menu icon</nav>
-        <div class="hamburger">hamburger</div>
+
+        <div class="logo">
+          <img src="./img/logo.png" alt="logo">
+        </div>
+
+        <nav class="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        
+        <div class="hamburger row">
+          <a href="#">Planning</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Features</a>
+          <a href="#">About Us</a>
+          <a class="btn" href="#">Get Started</a>
+        </div>
       </div>
 
     </div>
@@ -47,19 +60,47 @@
       <div class="container">
 
         <div class="cards col">
-        
-          <div class="card col">
-            <div class="text">title text button</div>
-            <div class="image">image</div>
+          
+          <!-- card:first-child  -->
+          <div class="card col"> 
+
+            <div class="text">
+
+              <h2>Get a demo application</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque qui deleniti tempore dolore consequatur beatae, id et excepturi repellat aperiam?</p>
+              <a href="#" class="btn"><i class="fa-brands fa-apple"></i> App Store</a>  
+
+            </div>
+
+            <div class="image">
+              <img src="./img/phone.png" alt="phone">
+            </div>
+
           </div>
   
-          <div class="card col">icon title text</div>
+          <div class="card col">
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Clean Code</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellat nihil laboriosam qui iste repellendus veritatis maiores. Eius, eaque sequi.</p>
+          </div>
   
-          <div class="card col">icon title text</div>
+          <div class="card col">
+            <i class="fa-solid fa-compass-drafting"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellat nihil laboriosam qui iste repellendus veritatis maiores. Eius, eaque sequi.</p>
+          </div>
   
-          <div class="card col">icon title text</div>
-          
-          <div class="card col">icon title text</div>
+          <div class="card col">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellat nihil laboriosam qui iste repellendus veritatis maiores. Eius, eaque sequi.</p>
+          </div>
+  
+          <div class="card col">
+            <i class="fa-solid fa-bullhorn"></i>            
+            <h2>Branding</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas repellat nihil laboriosam qui iste repellendus veritatis maiores. Eius, eaque sequi.</p>
+          </div>
   
         </div>
 
@@ -69,19 +110,30 @@
     <section class="app even hidden">
       <div class="container">
 
-        <div class="app-content">
-          <div class="image">image</div>
-          <div class="text">title text</div>
+        <div class="content">
+          <div class="image">
+            <img src="./img/planning1.png" alt="Planning">
+          </div>
+          <div class="text">
+            <h1>Strategic Planning</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex temporibus sit non laboriosam reprehenderit adipisci aut maxime magni perferendis.</p>
+          </div>
         </div>
         
         <div class="card">
-          <div class="image">image</div>
-          <div class="text">title text button</div>
+          <div class="image">
+            <img src="./img/planning2.png" alt="Planning">
+          </div>
+          <div class="text">
+            <h2>App Development</h2>
+            <p>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
+            <a href="#"><i class="fa-solid fa-arrow"></i></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="testimonials hidden">
+    <section class="testimonials">
       <div class="container">
 
         <div class="text">title title text</div>
@@ -125,7 +177,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us hidden">
       <div class="container">
 
         <div class="col">
@@ -143,7 +195,7 @@
       </div>
     </section>
     
-    <section class="get-started even">
+    <section class="get-started even hidden">
       <div class="container">
 
         <div class="col">

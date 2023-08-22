@@ -1,6 +1,4 @@
-/* ---------------
-    VARIABILI
-----------------*/
+/* Variables */
 
 :root {
   --color-box: #e0ffff; /**/
@@ -10,43 +8,15 @@
   --color-violet: #9792e4;
   --color-black: #333333;
   --color-yellow: #fdc15f;
-  --test-gap: 40px;
-}
-
-/* ---------------
-    GENERAL
-----------------*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 1px solid black;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-main section {
-  padding: 50px 0;
-  /* padding: 50px; */
-}
-
-section.even {
-  background-color: var(--color-violet);
-}
-
-.card {
-  border-radius: 20px;
-  padding: 30px 15px;
+  --color-grey: #5a6e7f;
+  --test-gap: 25px;
 }
 
 /* Utilities */
 
 .container {
-  width: calc(100vw - 50px);
-  /* max-width: 1140px; */
+  width: calc(100vw - 60px);
+  max-width: 1140px;
   margin: 0 auto;
 }
 

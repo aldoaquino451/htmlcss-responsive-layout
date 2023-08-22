@@ -1,29 +1,44 @@
 /* Stiamo partendo dalla versione  MOBILE  quindi useremo la min-width e avremo in successione gli step  TABLET  e  DESKTOP  */
 
+/*--------------------
+      TABLET
+---------------------*/ 
 
-/* tablet  */
 @media screen and (min-width:768px) {
+  
+  /* header  */
+  header .menu-icon {
+    display: none;
+  }
 
+  header .hamburger  {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  /* demo  */
   .demo .cards {
     flex-flow: row wrap;
+  }
+
+  .demo .card {
+    width: calc( ( 100% - 2*var(--test-gap) ) * 1/3 ) ;
   }
 
   .demo .card:first-child {
     width: calc( ( ( 100% - 2*var(--test-gap) ) * 1/3 ) * 2  + var(--test-gap) ) ;
     flex-direction: row;
-    height: 300px;
+  }
+  .demo .card:first-child .image {
+    height: auto;
+    width: 50%;
+    position: relative;
   }
 
-  .demo .card:first-child > * {
-    width: 100%;
-    height: 100%;
-  }
 
-  .demo .card {
-    width: calc( ( 100% - 2*var(--test-gap) ) * 1/3 ) ;
-    height: 300px;
-  }
   
+  /* testimonials  */
   .testimonials .card {
     flex-direction: row;
     height: 200px;
@@ -33,6 +48,7 @@
     margin: 25px;
   }
 
+  /* benefits  */
   .benefits .cards {
     flex-flow: row wrap;
   }
@@ -43,6 +59,7 @@
     width: calc(50% - 25px);
   }
   
+  /* about-us  */
   .about-us .col {
     flex-direction: row;
   }
@@ -61,14 +78,16 @@
 
 
 
-
-/* desktop */
+/*--------------------
+      DESKTOP
+---------------------*/ 
 
 @media screen and (min-width:1200px) {
-  .container {
-    max-width: 1140px;
-  }
 
+  /* demo  */
+
+
+  /* app  */
   .app .container {
     display: flex;
     flex-direction: row;
@@ -78,17 +97,9 @@
     width: 50%;
   }
 
-  
+  /* benefits */
   .benefits .card {
     width: calc((100% - 100px) * 1/3);
-  }
-
-  .menu-icon {
-    display: none;
-  }
-
-  .hamburger  {
-    display: inline-block;
   }
 
 }
