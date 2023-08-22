@@ -319,22 +319,59 @@ header .hamburger .btn {
 
 
 /* get-started section  */
+.get-started {
+  padding: 60px 0;
+  color: white;
+  text-align: center;
+}
 
-.get-started h3 {
-  padding-top: 25px;
+
+.get-started .col > span {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  color:  #d5d4f4;
 }
 
 .get-started h2 {
-  padding: 40px 0;
+  font-size: 34px;
+}
+
+.get-started h1 {
+  padding: 30px;
+  color: var(--color-yellow);
+  font-size: 60px;
+}
+
+.get-started a.btn {
+  margin: 40px auto;
+  padding: 20px 70px;
+  border-radius: 40px;
+  color: var(--color-violet);
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .get-started .btn {
   margin: 30px auto;
 }
 
+.get-started .contacts {
+  font-size: 15px;
+}
 
+.get-started .contacts i {
+  font-size: 6px;
+}
 
+.get-started .contacts a {
+  text-decoration: underline;  
+} 
 
+.get-started p:first-of-type {
+  width: 60%;
+  margin: 0 auto;
+}
 
 
 
@@ -346,14 +383,15 @@ footer {
   padding: 35px 0;
   background-color: var(--color-black);
   color: white;
+  font-size: 15px;
+  text-align: center;
 }
 
 footer .col {
   gap: 60px;
 }
 
-
-
-.hidden {
-  display: none;
+footer a {
+  text-decoration: underline;
+  color: blueviolet;
 }
